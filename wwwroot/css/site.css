@@ -1,0 +1,79 @@
+/* 1. Buong page at malinaw na dark text */
+body {
+    background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%) !important;
+    color: #0f172a !important; /* Malinaw na dark navy/black text */
+}
+
+/* 2. Siguraduhing malinaw ang lahat ng headings, labels, at paragraphs */
+h1, h2, h3, h4, h5, h6, p, label, span, div {
+    color: #0f172a;
+}
+
+/* Top links (IIS Instructor Information System, Login, Create account) */
+a, .navbar-brand, .top-nav-link {
+    color: #1e3a8a !important; /* Malinaw na dark blue */
+}
+
+    a:hover, .navbar-brand:hover, .top-nav-link:hover {
+        color: #2563eb !important;
+    }
+
+/* WELCOME BACK text */
+.welcome-text {
+    color: #0369a1 !important; /* Mas madilim na sky blue para hindi malabo */
+    font-weight: 700;
+}
+
+/* 3. Input boxes: malinaw na background at madilim na text kapag nagta-type */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+.form-control {
+    background-color: #ffffff !important; /* Puting input box */
+    color: #0f172a !important; /* Madilim na text habang nagta-type */
+    border: 1.5px solid #93c5fd !important; /* Malinaw na light-medium blue border */
+}
+
+    input::placeholder,
+    .form-control::placeholder {
+        color: #64748b !important; /* Nababasang grey placeholder */
+        opacity: 1;
+    }
+
+    input:focus,
+    .form-control:focus {
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+        border-color: #2563eb !important;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2) !important;
+        outline: none !important;
+    }
+
+/* Checkbox */
+input[type="checkbox"] {
+    accent-color: #2563eb !important;
+}
+
+/* 4. Log in button */
+button[type="submit"],
+.btn-login,
+.btn-primary {
+    background-color: #2563eb !important;
+    border-color: #2563eb !important;
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+    button[type="submit"]:hover,
+    .btn-login:hover,
+    .btn-primary:hover {
+        background-color: #1d4ed8 !important;
+        border-color: #1d4ed8 !important;
+        color: #ffffff !important;
+    }
+
+/* Bottom helper text ("Don't have an account?") */
+.register-prompt,
+.register-text {
+    color: #1e293b !important;
+}
